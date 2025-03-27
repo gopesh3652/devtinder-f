@@ -12,7 +12,6 @@ const Premium = () => {
 
 		const { keyId, amount, currency, orderId, notes } =
 			order.data.savedPaymentDetails;
-		console.log(order.data);
 		// it will open the razo pay dialogue box
 		const options = {
 			key: keyId,

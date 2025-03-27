@@ -5,7 +5,7 @@ import { BASE_URL } from "../utils/constants";
 const Premium = () => {
 	const handleBuyClick = async (type) => {
 		const order = await axios.post(
-			"/payment/create",
+			BASE_URL + "/payment/create",
 			{ membershipType: type },
 			{ withCredentials: true }
 		);
